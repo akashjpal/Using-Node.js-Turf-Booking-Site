@@ -1,0 +1,66 @@
+.row p{
+    color: green;
+    font-weight: bold;
+}
+
+.search-section p{
+    color: green;
+    font-weight: bold;
+}
+.search-section {
+   background-color:#F7F6DC;
+   padding: 3rem;
+text-align: center;
+color: white;
+font-weight: bold;
+}
+input{
+    border: 2px solid green;
+    border-radius: 5%;
+    color: #FFC090;
+    font-weight: bold;
+}
+.content a{
+    font-weight: bold;
+    color: #FFC090;
+    text-decoration: none;
+}
+.content{
+    padding: 5% 8%;
+    background-color: #F7F6DC;
+}
+
+/* Popularities */
+.popularity-section{
+    text-align: center;
+    padding: 5% 8%;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    color: green;
+}
+
+.popularity-section ul li a{
+    font-weight: bold;
+        color: #FFC090;
+        text-decoration: none;
+}
+
+/* All bookings.html */
+
+.bookings{
+    color: green;
+}
+
+div h3,
+.fa{
+    padding-bottom: 2.5rem;
+}
+
+/* booking1.ejs */
+.checkbox{
+    text-align: center;
+    
+}

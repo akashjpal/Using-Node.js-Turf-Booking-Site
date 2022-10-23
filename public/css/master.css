@@ -1,0 +1,153 @@
+      /* Title */
+
+body{
+  color: #F6F6F6;
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  background-color: lightgreen;
+  text-align: left;
+}
+.navbar-brand{
+  color:#F6F6F6;
+  font-size: 3rem;
+  font-family: Ubuntu;
+  font-weight: 900;
+}
+ul{
+  font-size: 1.5rem;
+}
+
+.row{
+  padding-top: 10%;
+}
+.col-lg-6 img{
+  width: 70%;
+  margin-left: 10%;
+  transform: rotate(25deg);
+  border-radius: 20px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+button{
+  margin: 2% auto;
+}
+.tm-service{
+  color: black;
+}
+
+.feature{
+  padding: 4% 3%;
+  text-align: center;
+}
+
+.icon{
+  color: #7DCE13;
+  margin: 0 0 2rem;
+}
+
+.icon:hover{
+  color:  #2B7A0B;
+}
+
+.feature-description{
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #7DCE13;
+}
+
+/* Testinomials */
+
+.testinomials{
+  padding: 7% 15%;
+  background-color: lightgreen;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.carousel-item{
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+/* Booking */
+
+.booking{
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.booking a{
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/* About Us */
+.tm-footer{
+  padding: 7% 15%;
+}
+.about{
+  color: lightgreen;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about h1{
+  font-weight: 900;
+}
+
+.about h3{
+  font-weight:500;
+}
+
+/* Footer Media */
+.footer{
+  padding:7% 15%;
+  text-align: center;
+  color: white;
+  background-color: green;
+}
+.footer-icon{
+  color: white;
+  margin: 3% 5%;
+}
+
+
+/* Explore Section */
+
+.newsletter .row{
+  color: #2B7A0B;
+}
+
+.subscribe{
+  text-align: center;
+  margin-top :10%;
+}
+
+.newsletter-heading,
+.col-lg-6 h3{
+  font-size:1.5rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+ol li,
+ol li p{
+  line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}

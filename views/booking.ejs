@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trickshot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script type="text/javascript" src="dist/slick.js"></script>
+     <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
+
+
+    <!--     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+ -->
+    <!--
+         <script type="text/javascript" src="dist/demo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+
+    <!-- bootstrap files   -->
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/1bc39c2d09.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/booking.css">
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&amp;family=Ubuntu&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      -->
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <section class="coloured-section" id="title">
+        <div class="container-fluid">
+            <!--  <img class="tm-logo" src="images/logo.png" alt="Trickshot"> -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">trickshot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="dicee.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="explore.html">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="booking.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </section>
+    <section class="search-section">
+        <p>Search:</p>
+        <input type="search" name="search">
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <% turfImage.forEach(function(turf) { %>
+                    <div class="col-lg-4">
+                        <div class="content">
+                            <img src="<%=turf.image_icon%>" alt="This is an Image" width="90%">
+                            <p>
+                                <%=turf.location%>
+                            </p>
+                            <form action="/booking.ejs" method="post" id="form-id">
+                                <!-- <a href="#" name="turf" value="<%=turf._id%>" onclick="su(form.submit())"></a> -->
+                                <div>
+                                    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" name="turf" value="<%= turf._id %>" onChange="this.form.submit()" >
+                                </div>
+                                <!-- <a href="booking1.ejs" name="turf">View More</a> -->
+                            </form>
+                        </div>
+                    </div>
+                    <%})%>
+            </div>
+        </div>
+    </section>
+    <section class="popularity-section">
+        <h1>Popularities Section</h1>
+        <div class="poplularities">
+            <ul>
+                <li><a href="andheri.html">Andheri</a></li>
+                <li><a href="vileparle.html">Vileparle</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+<footer class="footer">
+    <div class="media">
+        <i class="footer-icon fa-brands fa-twitter fa-2x"></i>
+        <i class="footer-icon fa-brands fa-facebook-f fa-2x"></i>
+        <i class="footer-icon fa-brands fa-instagram fa-2x"></i>
+        <i class="footer-icon fa-solid fa-envelope fa-2x"></i>
+        <p>© Copyright 2022 Trickshot</p>
+    </div>
+
+</footer>
+
+</html>
